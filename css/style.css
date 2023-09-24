@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contedor-encabezado{
+    display: flex;
+    background-color: #ecf1ec;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(242, 241, 241);
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+.imagenes-encabezado img:hover{
+    position: relative;
+    padding: .1rem;
+    margin-top: 0;
+    transition: all .1s ease-in;
+    margin-top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.imagenes-encabezado img{
+    background-color: white;
+    width: 100px;
+    height: 50px;
+    margin: .5rem;
+    padding: .15rem;
+}
+
+.contenedor-barra-navegacion{
+    display:flex;
+    justify-content: right;
+    align-items: center;
+    border: 1px solid rgb(242, 241, 241);
+}
+
+.barra-navegacion a{
+    text-decoration: none;
+    color: rgb(111, 107, 107);
+    margin: .5rem;
+    padding: .1rem;
+}
+
+nav{
+    margin: .2rem;
+    padding: 1rem;
+}
+
+.nav-enlaces a{
+    padding: 1rem .5rem 1rem .1rem;
+}
+
+#nav-inicio:hover{
+    background-color: #919191;
+    color: white;
+    font-weight:lighter;
+}
+
+#nav-pokedex:hover{
+    background-color: #e43613;
+    color: white;
+}
+
+#nav-aplicaciones:hover{
+    background-color: #ed6b30;
+    color: white;
+}
+
+#nav-juegoCartas:hover{
+    background-color: #e7bd30;
+    color: white;
+}
+
+#nav-tv:hover{
+    background-color: #4cad5b;
+    color: white;
+}
+
+#nav-play:hover{
+    background-color: #31a7d7;
+    color: white;
+}
+
+#nav-noticias:hover{
+    background-color: #2b55a3;
+    color: white;
+}
+
+.contenedor-formulario{
+    display: flex;
+    background-color: rgb(50, 48, 48);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    /*margin: 0 25% 0 25%;*/
+}
+
+.formulario{
+    text-align: left;
+    width: 450px;
+}
+
+.formulario span{
+    font-size: 25px;
+}
+
+.formulario form{
+    margin: .5rem 0;
+}
+
+form input{
+    height: 40px;
+    width: 300px;
+    margin-right: 1rem;
+    border-radius: 5px;
+}
+
+/*
+.icono-buscar{
+    background-color: white;
+    height: 40px;
+    display: block;
+}
+
+*/
+.cuadro-texto{
+    display: flex;
+    background-color: #4cad5b;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 380px;
+    font-size: 18px;
+}
+
+.contenedor-principal{
+    width: 50%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+}
+
+.cartas-pokemon{
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.cartas-pokemon:hover{
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.cartas-pokemon img{
+    border-radius: 5px;
+    background-color: rgb(241, 240, 240);
+}
+
+.contenedor-secundario{
+    margin-left: .5rem;
+}
+
+.contenedor-numero-pokedex{
+    margin-top: .1rem;
+}
+
+.numero-pokedex{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(179, 178, 178);
+}
+
+.contenedor-nombre-pokemon{
+    margin-top: .3rem;
+}
+
+.nombre-pokemon{
+    font-weight: bold;
+}
+
+.etiquetas-tipo{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.etiqueta-izquierda123{
+    border-radius: 5px;
+    padding: .15rem;
+    background-color: #33d75f; 
+}
+
+.etiqueta-derecha123{
+    border-radius: 5px;
+    margin: .1rem;
+    padding: .15rem;
+    color: white;
+    background-color: #b167bc; 
+}
+
+.etiqueta-izquierda456{
+    border-radius: 5px;
+    padding: .15rem;
+    background-color: #ef7c2d; 
+}
+
+.etiqueta-derecha456{
+    border-radius: 5px;
+    margin: .1rem;
+    padding: .15rem;
+    color: white;
+    background-color: #4ac1e9; 
+}
+
+.etiqueta-izquierda789{
+    border-radius: 5px;
+    padding: .15rem;
+    background-color: #4592c4; 
+}
+
+footer{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    background-color: rgb(50, 48, 48);
+    color: white;
+    align-items: center;
+    height: 75px;
+}
+
+.pie-pagina{
+    margin: 1rem;
+    text-align: center;
+    font-size: 12px;
+}
+
+.pie-pagina p{
+    margin: .5rem;
+}
+
+
+/*Codigo de respalvo V01*/
+
+/*
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contedor-encabezado{
+    display: block;
+    background-color: #ecf1ec;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(242, 241, 241);
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+.imagenes-encabezado img:hover{
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.imagenes-encabezado img{
+    background-color: white;
+    width: 100px;
+    height: 50px;
+    margin: .5rem;
+    padding: .15rem;
+}
+
+.contenedor-barra-navegacion{
+    display:flex;
+    justify-content: right;
+    align-items: center;
+    border: 1px solid rgb(242, 241, 241);
+}
+
+.barra-navegacion a{
+    text-decoration: none;
+    color: rgb(111, 107, 107);
+    margin: .5rem;
+    padding: .1rem;
+}
+
+nav{
+    margin: .2rem;
+    padding: 1rem;
+}
+
+.nav-enlaces a{
+    padding: 1rem .5rem 1rem .1rem;
+}
+
+#nav-inicio:hover{
+    background-color: #919191;
+    color: white;
+    font-weight:lighter;
+}
+
+#nav-pokedex:hover{
+    background-color: #e43613;
+    color: white;
+}
+
+#nav-aplicaciones:hover{
+    background-color: #ed6b30;
+    color: white;
+}
+
+#nav-juegoCartas:hover{
+    background-color: #e7bd30;
+    color: white;
+}
+
+#nav-tv:hover{
+    background-color: #4cad5b;
+    color: white;
+}
+
+#nav-play:hover{
+    background-color: #31a7d7;
+    color: white;
+}
+
+#nav-noticias:hover{
+    background-color: #2b55a3;
+    color: white;
+}
+
+.contenedor-formulario{
+    display: flex;
+    background-color: rgb(50, 48, 48);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.formulario{
+    text-align: left;
+}
+
+.formulario form{
+    margin: .5rem 0;
+}
+
+form input{
+    height: 30px;
+}
+
+.cuadro-texto{
+    display: flex;
+    background-color: #4cad5b;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 350px;
+}
+
+.contenedor-principal{
+    width: 50%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+.cartas-pokemon{
+    margin: .5rem .2rem .5rem .2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.cartas-pokemon:hover{
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.cartas-pokemon img{
+    border-radius: 5px;
+    background-color: rgb(241, 240, 240);
+}
+
+.contenedor-secundario{
+    margin-left: .5rem;
+}
+
+.contenedor-numero-pokedex{
+    margin-top: .1rem;
+}
+
+.numero-pokedex{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(179, 178, 178);
+}
+
+.contenedor-nombre-pokemon{
+    margin-top: .3rem;
+}
+
+.nombre-pokemon{
+    font-weight: bold;
+}
+
+.etiquetas-tipo{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.etiqueta-izquierda123{
+    border-radius: 5px;
+    padding: .15rem;
+    background-color: #33d75f; 
+}
+
+.etiqueta-derecha123{
+    border-radius: 5px;
+    margin: .1rem;
+    padding: .15rem;
+    color: white;
+    background-color: #b167bc; 
+}
+
+.etiqueta-izquierda456{
+    border-radius: 5px;
+    padding: .15rem;
+    background-color: #ef7c2d; 
+}
+
+.etiqueta-derecha456{
+    border-radius: 5px;
+    margin: .1rem;
+    padding: .15rem;
+    color: white;
+    background-color: #4ac1e9; 
+}
+
+.etiqueta-izquierda789{
+    border-radius: 5px;
+    padding: .15rem;
+    background-color: #4592c4; 
+}
+
+footer{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    background-color: rgb(50, 48, 48);
+    color: white;
+    align-items: center;
+    height: 75px;
+}
+
+.pie-pagina{
+    margin: 1rem;
+    text-align: center;
+    font-size: 12px;
+}
+
+.pie-pagina p{
+    margin: .5rem;
+}
+
+
+*/
