@@ -41,9 +41,14 @@
     color: white;
 }
 
+#btn-registrate{
+    color: white;
+    font-weight:lighter;
+}
+
 .contenedor-principal{
     display: grid;
-    grid-template-columns: repeat(3fr);
+    grid-template-columns: repeat(4fr);
 }
 
 .card-body h6{
@@ -67,14 +72,6 @@
     top: -2px;
     box-shadow: 0 4px 5px rgba(0,0,0,0.2);
 }
-
-/*
-.contenedor-footer{
-   width: 100%;
-   display: flex;
-  
-}
-*/
 
 footer{
     display: grid;
