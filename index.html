@@ -81,6 +81,16 @@
                   >Noticias</a
                 >
               </li>
+            </li>
+            <li class="nav-item">
+              <!--<a class="nav-link disabled" aria-disabled="true" id="nav-noticias">Noticias</a>-->
+              <a
+                class="nav-link active"
+                aria-disabled="true"
+                id="nav-comprar-cartas"
+                >Comprar Cartas</a
+              >
+            </li>
             </ul>
           </div>
         </div>
@@ -179,7 +189,8 @@
       </button>
     </div>
     <!--modal-->
-    <button
+    <div class="contenedor-modal d-flex">
+      <button
       type="button"
       class="btn btn-success"
       data-bs-toggle="modal"
@@ -222,6 +233,8 @@
           </div>
         </div>
       </div>
+    </div>
+
     </div>
     <!--Contenedor principal-->
     <div class="contenedor-principal d-flex justify-content-center flex-wrap">
@@ -423,7 +436,7 @@
       <footer class="footer">
         <div class="row">
           <div class="col">
-            <h5>The Pokémon Company</h5>
+            <h5 id="company">The Pokémon Company</h5>
           </div>
           <div class="col" id="texto-centro">
             <h5>

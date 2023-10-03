@@ -41,6 +41,11 @@
     color: white;
 }
 
+#nav-comprar-cartas:hover{
+    background-color: #363536e7;
+    color: white;
+}
+
 #btn-registrate{
     color: white;
     font-weight:lighter;
@@ -85,6 +90,10 @@ footer .col{
     text-align: center;
     font-size: 12px;
     padding: 0;
+}
+
+#company{
+    justify-content: center;
 }
 
 footer p{
