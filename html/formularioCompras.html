@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../imagenes/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--Contenedor barra de navegación-->
+    <div class="contenedor-navBarg d-flex justify-content-end">
+      <!--Barra de navegación-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html" id="nav-inicio">Inicio</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  id="nav-pokedex"
+                  >Pokédex</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" id="nav-aplicaciones"
+                  >Aplicaciones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" id="nav-juegoCartas"
+                  >Juego de Cartas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-disabled="true" href="#" id="nav-tv"
+                  >TV Pokémon</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-disabled="true" href="#" id="nav-play"
+                  >Play! Pokémon
+                </a>
+              </li>
+              <li class="nav-item">
+                <!--<a class="nav-link disabled" aria-disabled="true" id="nav-noticias">Noticias</a>-->
+                <a href="#"
+                  class="nav-link active"
+                  aria-disabled="true"
+                  id="nav-noticias"
+                  >Noticias</a
+                >
+              </li>
+            </li>
+            <li class="nav-item">
+              <!--<a class="nav-link disabled" aria-disabled="true" id="nav-noticias">Noticias</a>-->
+              <a
+                class="nav-link active"
+                aria-disabled="true" href="./formularioCompras.html"
+                id="nav-comprar-cartas"
+                >Comprar Cartas</a
+              >
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--Fin contenedor barra de navegación-->
+    <!--Formulario de compras-->
+    <div class="contenedor-form my-4">
+      <form action="./procesarCompraCartas.html" method="post">
+        <div class="row">
+            <div class="col mb-3">
+              <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-contenedor" required>
+            </div>
+            <div class="col mb-3"> 
+              <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="form-contenedor" required>
+            </div>
+        </div>
+      <div class="row mb-3">
+        <div class="col">
+          <input type="number" name="cantidad" id="cantidad" onchange="calcularTotal()" onkeyup="calcularTotal()" placeholder="Cantidad de Cartas" class="" required>
+        </div>
+        <div class="col">
+          <select class="form-select" id="descuento" aria-label="Default select example" onchange="calcularTotal()" required>
+            <option value="50">Lider de Gimnasio 50%</option>
+            <option value="30">Club de Entrenadores 30%</option>
+            <option value="20">Entrenador 20%</option>
+          </select>
+        </div>
+        <div class="small" id="precio-cartas">
+          Valor Carta Pokémon $2.99
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mb-3 text-center">
+          Total a Pagar $: <span id="totalPagar">0</span>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <input type="submit" value="Comprar" class="btn btn-primary">
+      </div>
+    </form>
+    </div>
+    <!--Fin formulario de compras-->
+    <!--Footer-->
+    <div class="contenedor-footer flex-wrap">
+        <footer class="footer">
+          <div class="row">
+            <div class="col">
+              <h5 id="company">The Pokémon Company</h5>
+            </div>
+            <div class="col" id="texto-centro">
+              <h5>
+                Contacto: <span id="email">melvinvargas2019.itfm@gmail.com</span>
+              </h5>
+            </div>
+            <div class="col">
+              <h5>Síguenos en:</h5>
+              <div class="contenedor-redes-sociales">
+                <a href="#"
+                  ><img src="../imagenes/linkedin.png" alt="" class="red-social"
+                /></a>
+                <a href="#"
+                  ><img src="../imagenes/github.png" alt="" class="red-social"
+                /></a>
+                <a href="#"
+                  ><img src="../imagenes/instagram.png" alt="" class="red-social"
+                /></a>
+                <a href="#"
+                  ><img src="../imagenes/facebook.png" alt="" class="red-social"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!--Fin footer-->
+      <!--Script-->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous">
+      </script>
+      <!--script interno-->
+      <script src="../js/comprarCartas.js"></script>
+    </body>
+  </html>
